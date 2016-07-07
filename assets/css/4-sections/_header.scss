@@ -1,0 +1,14 @@
+//
+// Styles for header
+//
+.navbar{
+    border: 0;
+    .navbar-brand{
+        padding: 0 15px;
+    }
+    
+    & .navbar-toggle{
+        background-color: $color-primary;
+    }
+    
+}

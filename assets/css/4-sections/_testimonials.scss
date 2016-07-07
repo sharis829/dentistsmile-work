@@ -1,0 +1,55 @@
+.section-testimonials {
+    background:{
+        image: url(../img/#{$testimonial-hero});
+        size: cover;
+        attachment: fixed;
+        position: center center;
+    }
+    
+//  @media screen and (min-width: $screen-sm) {
+//      background-attachment: fixed;
+//  }
+	
+	.overlay{
+		padding: $spaceDouble*1.5;
+		background-color: rgba($color-primary, 0.5);
+	}
+	
+	.testimonials-slide {
+		.item{
+			text-align: center;
+		}
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	
+	blockquote{
+		border: none;
+		
+		.fa{
+			border: 2px solid $white;
+			padding: 8px;
+			margin-bottom: $spaceDouble;
+			color: $white;
+		}
+		
+		p{
+			color: $white;
+			font-style: italic;
+			letter-spacing: 0.05rem;
+		}
+	}
+	
+	footer{
+		color: $white;
+		font-weight: 600;
+		strong{
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			letter-spacing: 0.08rem;
+		}
+	}
+}

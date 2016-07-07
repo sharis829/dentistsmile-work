@@ -1,0 +1,64 @@
+// 各种组件
+/* Form
+ ------------------------------------ */
+
+.form {
+    padding: $spaceDouble $space;
+    background: $color-bg;
+
+    @include breakpoint('sm'){
+        padding: $spaceDouble*2 $space;
+    }
+    
+    input,
+    textarea {
+        @extend %form-fields;
+    }
+    textarea {
+        height: 100px;
+    }
+    .btn {
+        width: auto;
+        border: 0;
+        border-radius: 0;
+    }
+    .form-field {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Icon - Fontawesome Icons 
+ ------------------------------------ */
+
+.fa{
+    color: $color-primary;
+}
+
+/* ---------------------------------
+ * Expandable Box
+ */
+.expandable-box {
+    position: relative;
+    -webkit-perspective: none;
+}
+.expandable-box-top {
+    padding: $space;
+    background-color: darken($color-primary, 2%);
+    @include transition(0.5s all ease);
+    .expandable-box:hover & {
+        transform: translate(0px, -45px);
+    }
+}
+.expandable-box-bottom {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    font-size: 0;
+    @include transition(0.5s all ease);
+    transform: translate(0px, 0px) rotateX(90deg);
+    transform-origin: left top;
+    .expandable-box:hover & {
+        transform: translate(0px, -45px) rotateX(0deg);
+    }
+}

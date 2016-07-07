@@ -1,0 +1,17 @@
+<section class='section-gallery' id='gallery'>
+	<h2>Gallery</h2>
+	<div class='row'>
+		{% for gallery-item in site.data.layout.gallery %}
+		<a href='assets/img/{{gallery-item.thumb}}' class="gallery-item expandable-box col-xs-6 col-sm-3">
+			<div class='expandable-box-top'>
+				<img class='img-responsive' src="assets/img/{{gallery-item.thumb}}" alt="{{gallery-item.alt}}">
+			</div>
+			<div class='expandable-box-bottom'>
+				<div class='link-bar' href='#'>
+					<span class='fa fa-{{site.data.layout.icon-chain}} fa-lg'></span>
+				</div>
+			</div>
+		</a>
+		{% endfor %}
+	</div>
+</section>

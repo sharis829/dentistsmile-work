@@ -1,0 +1,22 @@
+<section id='about' class='section-about'>
+	<h2>About Us</h2>
+	<div class='container-fluid'>
+		<div class='row'>
+			<div class='col-sm-6'>
+				<h3>{{ site.data.layout.about.title }}</h3>
+				<p>{{ site.data.layout.about.description }}
+				</p>
+
+				<dl class="dl-horizontal feature-list">
+					{% for feature in site.data.layout.about.features %}
+					<dt><span class='fa fa-{{feature.icon-name}} fa-lg'></span></dt>
+					<dd>{{ feature.detail }}</dd>
+					{% endfor %}
+				</dl>
+
+			</div>
+			<div class='col-sm-6'>
+				<img class='img-responsive' src='assets/img/{{site.data.layout.about.hero-image}}'>
+			</div>
+		</div>
+</section>

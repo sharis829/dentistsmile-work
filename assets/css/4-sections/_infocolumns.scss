@@ -1,0 +1,69 @@
+.section-info-3columns{
+    display: block;
+    
+    @include breakpoint('sm'){
+        display: flex;
+    }
+    
+    .fa{
+        margin-bottom: $space;
+        color: $white;
+    }
+    
+    .col{
+        background-color: $color-primary;
+        text-align: center;
+        color: $white;
+        padding: $space * 3;
+        
+        
+        @media (min-width: $screen-sm) and (max-width: $screen-md) {
+           padding: $space * 3  $space;
+        }
+        
+        h3{
+            color: $white;
+        }
+        
+        p{
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+        
+        strong{
+            font-weight: 600;
+        }
+        
+        &.col-openhours{
+            background-color: lighten($color-primary, 2%);
+            
+            .icon{
+                 width: 25px;
+            }
+           
+           table{
+               width: 100%;
+               max-width: 260px;
+               margin: 0 auto;
+           }
+           td:nth-child(1){
+               text-align: left;
+           }
+           
+           td:nth-child(2){
+               text-align: right;
+           }
+           
+        }
+        
+        &.col-location{
+            background-color: lighten($color-primary, 4%);
+           
+            .icon{
+                 width: 20px;
+            }
+        }
+    }
+    
+}

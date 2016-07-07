@@ -1,0 +1,8 @@
+<footer class='section-footer'>
+	<nav>
+		{% for link in site.data.layout.footer.nav-links %}
+			<a href='{{ link.url }}' class='fa fa-{{link.icon}} fa-lg'></a>
+		{% endfor %}
+	</nav>
+	<p class='copyright'>{{ site.data.layout.footer.copyright }}</p>
+</footer>

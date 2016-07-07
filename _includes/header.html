@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default navbar-fixed-top" id='top'>
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         	<a class='navbar-brand' href='#'>
+         		{% include {{ site.logo }} %} 
+         	</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav navbar-right">
+				{% for item in site.data.layout.nav-menus %}
+				<li class='{% if forloop.first == true %}active{% endif %}' href='{{ item.url }}'><a href="#">{{ item.text }}</a></li> {% endfor %}
+			</ul>
+		</div>
+	</div>
+</nav>

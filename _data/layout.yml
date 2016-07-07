@@ -1,0 +1,236 @@
+###
+###  Common Resources
+###
+
+##### Icons
+icon-envelope:          'envelope'
+icon-phone:             'phone'
+icon-quote:             'quote-left'
+icon-chain:             'chain'
+
+
+###
+###  Contents
+###
+
+##### Nav Menu
+nav-menus:
+    - text:      'Home'
+      url:       '#top'
+      
+    - text:      'About'
+      url:       '#about'
+      
+    - text:      'Treatments'
+      url:       '#treatments'
+      
+    - text:      'Team'
+      url:       '#team'
+      
+    - text:     'Testimonials'
+      url:      '#testimonials'
+      
+    - text:     'Gallery'
+      url:      '#gallery'
+      
+    - text:     'Location'
+      url:      '#location'
+
+
+##### Hero
+hero:
+    hero_img:           hero.jpg
+    hero_title:         'DentistSmile'
+    hero_description:   'A responsive Jekyll theme for dental clinics.'
+
+
+##### Information 3 columns
+
+# Contact
+contact:
+    icon:       'svg/envelope-o.html'
+    title:      'Contact Us'
+    phone:      '932 50 540'
+    em_phone:   '931 53 234'
+    email:      'contact@yoursite.com'
+    
+# Opening Hours
+openHours:
+    icon:               'svg/clock-o.html'
+    title:              'Opening Hours'
+    items:
+        - week_period:      Monday - Friday
+          time_period:      9:00 – 18:00
+          
+        - week_period:      Saturday
+          time_period:      10:00 – 17:00 
+          
+        - week_period:      Sunday
+          time_period:      10:00 – 15:00
+
+# Location
+location:
+    icon:               'svg/map-marker.html'
+    title:              'Location'
+    address:           'Von schroeders 273,<br> Viña del mar - Chile'
+    
+
+###### Team
+team:
+   - name: 'Britta Perry'
+     avatar: 'assets/img/team/team1.jpg'
+     phone: '932 50 540'
+     email: 'email@gmail.com'
+     
+   - name: 'Troy Barnes'
+     avatar: 'assets/img/team/team2.jpg'
+     phone: '932 50 540'
+     email: 'email@gmail.com'
+     
+   - name: 'Annie'
+     avatar: 'assets/img/team/team3.jpg'
+     phone: '932 50 540'
+     email: 'email@gmail.com'
+     
+   - name: 'Jeff Winger'
+     avatar: 'assets/img/team/team4.jpg'
+     phone: '932 50 540'
+     email: 'email@gmail.com'
+     
+   - name: 'Britta Perry'
+     avatar: 'assets/img/team/team1.jpg'
+     phone: '932 50 540'
+     email: 'email@gmail.com'
+     
+   - name: 'Troy Barnes'
+     avatar: 'assets/img/team/team2.jpg'
+     phone: '932 50 540'
+     email: 'email@gmail.com'
+     
+   - name: 'Annie'
+     avatar: 'assets/img/team/team3.jpg'
+     phone: '932 50 540'
+     email: 'email@gmail.com'
+     
+   - name: 'Jeff Winger'
+     avatar: 'assets/img/team/team4.jpg'
+     phone: '932 50 540'
+     email: 'email@gmail.com'
+
+###### Testimonials
+testimonials-hero-image: 'parallax.jpg' 
+
+testimonials:
+   - name: 'Jeff Winger'
+     title: 'Law Professor - Greendale'
+     quotes: "I teach law at Greendale, so believe me, I don't know much about law."
+      
+   - name: 'Troy Barnes'
+     title: 'Law Professor - Greendale'
+     quotes: "Let\'s do what people do. Let's get a house we can't afford and a dog that makes us angry."
+      
+   - name: 'Annie'
+     title: 'Law Professor - Greendale'  
+     quotes: "There already was a rating system in place, it was called 'Cool People Get More,' and it was working fine."
+ 
+
+###### Gallery
+gallery:
+    - thumb: gallery/thumb/gl2.jpg
+      large: gallery/large/gl2.jpg
+      alt: 'gl2.jpg'
+    
+    - thumb: gallery/thumb/gl3.jpg
+      large: gallery/large/gl3.jpg
+      alt: 'gl3.jpg'
+            
+    - thumb: gallery/thumb/gl4.jpg
+      large: gallery/large/gl4.jpg
+      alt: 'gl4.jpg'     
+      
+    - thumb: gallery/thumb/gl5.jpg
+      large: gallery/large/gl5.jpg
+      alt: 'gl5.jpg'
+ 
+    - thumb: gallery/thumb/gl4.jpg
+      large: gallery/large/gl4.jpg
+      alt: 'gl4.jpg'
+    
+    - thumb: gallery/thumb/gl2.jpg
+      large: gallery/large/gl2.jpg
+      alt: 'gl2.jpg'
+            
+    - thumb: gallery/thumb/gl5.jpg
+      large: gallery/large/gl5.jpg
+      alt: 'gl5.jpg'     
+      
+    - thumb: gallery/thumb/gl3.jpg
+      large: gallery/large/gl3.jpg
+      alt: 'gl3.jpg'
+
+
+###### About 
+about: 
+    hero-image: 'about.jpg'
+    title: 'Welcome to DentistSmile'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!'
+    features:
+      - icon-name:  'heart'
+        detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.'
+      - icon-name:  'medkit'
+        detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.'
+      - icon-name: 'star'
+        detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.'  
+
+
+###### Treatments
+treatments:
+    - icon:     'user-md'
+      title:    'Invisible braces'
+      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'
+
+    - icon:     'diamond'
+      title:    'Cosmetic Dentistry'
+      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
+    
+    - icon:     'flask'
+      title:    'Stain removal'
+      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
+    
+    - icon:     'globe'
+      title:    'Dentures'
+      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'    
+    
+    - icon:     'ambulance'
+      title:    'Emergency Calls'
+      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
+    
+    - icon:     'bed'
+      title:    'Sedation'
+      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
+    
+##### Footer
+footer:
+    nav-links: 
+     - icon:    'facebook'
+       url:     'http://facebook.com'
+       
+     - icon:    'twitter'
+       url:     'http://twitter.com'
+       
+     - icon:    'instagram'
+       url:     'http://instagram.com'
+     
+     - icon:    'youtube'
+       url:     'http://youtube.com'
+     
+     - icon:    'skype'
+       url:     'skype:obaez_design?userinfo'
+       
+     - icon:    'feed' 
+       url:     'yes' 
+       
+    copyright: '© 2015 DentistSmile - All rights reserved'
+    
+    
+    

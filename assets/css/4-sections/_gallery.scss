@@ -1,0 +1,48 @@
+.section-gallery{
+    padding: $spaceDouble 0;
+    
+    .row{
+        margin: $space 0 0;
+    }
+    
+    [class*='col-']{
+        padding: 0;
+    }
+    
+    .gallery-item{
+        width: 100%;
+    }
+    
+    @include breakpoint('xs'){
+        .col-xs-6{
+            width: 50%;
+        } 
+    }
+    
+    @include breakpoint('sm'){
+        .col-sm-3{
+            width: 25%;
+        } 
+    }
+    
+    .expandable-box-top{
+        padding: 0;    
+    }
+    
+    .expandable-box-bottom{
+        .link-bar{
+           width: 100%; 
+           height: 45px;
+           text-align: center;
+           background-color: $color-primary;
+           font-size: 1.4rem;
+           &:hover{
+               background-color: darken($color-primary, 5%);
+           }
+        }
+        .fa{
+            color: $white;
+            line-height: 45px;
+        }
+    }
+}

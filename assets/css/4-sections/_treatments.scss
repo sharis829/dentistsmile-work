@@ -1,0 +1,27 @@
+.section-treatments {
+    background-color: $alabaster;
+    padding: $spaceDouble 0;
+    
+    .row {
+        display: block;
+        
+        @include breakpoint('sm'){
+            display: flex;
+            flex: 1 0 auto;
+            flex-wrap: wrap;
+        }
+    }
+    .item {
+        background-color: $white;
+        padding: 10px 15px;
+        background-clip: content-box;
+        .wrapper {
+            text-align: center;
+            padding: $space;
+            background-color: transparent;
+        }
+        h4 {
+            margin: $space/2;
+        }
+    }
+}

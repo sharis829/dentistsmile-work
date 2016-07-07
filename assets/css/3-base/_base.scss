@@ -1,0 +1,86 @@
+/* Basic Styles
+ ------------------------------------ */
+body {
+    background-color: $color-bg;
+    color: $color-base;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;    
+}
+
+/*  Typography presets
+  ------------------------------------  */
+h1, h2, h3, h4{
+    margin: 0;
+}
+
+h1{
+    color: $color-primary-light;
+    padding: 0 0 $space/2;
+}
+
+h2{
+    text-align: center;
+    padding: $spaceDouble 0; 
+}
+
+h3 {
+    padding: $space 0;
+}
+
+p {
+    margin: 0 0 $space;
+}
+
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+
+/* Links
+ ------------------------------------ */
+a {
+    outline: 0;
+    
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+
+/* Selection Color
+ ------------------------------------ */
+ ::selection {
+    background-color: $color-selection;
+}
+
+
+/* SVG
+ ------------------------------------ */
+
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+/* Section
+ ---------------------------------*/
+section {
+//  padding: 50px 0 80px;
+}
+
+section:nth-child(odd) {
+    background-color: $color-bg;
+}
+
+/*
+ * Container 
+ */
+.container-fluid{
+    max-width: $content-width; 
+}

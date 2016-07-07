@@ -1,0 +1,48 @@
+.section-team {
+    background-color: $color-primary!important;
+    padding: $spaceDouble 0;
+    h2 {
+        color: $white;
+    }
+    .teams-slideshow {
+        .item {
+            margin: 1px;
+        }
+        h4 {
+            text-align: center;
+            color: $white;
+            margin-top: $space / 2;
+        }
+        .col {
+            text-align: center;
+            width: 50%;
+            display: inline-block;
+            font-size: 1.4rem; /* base for font awesome*/
+            &:nth-child(1) {
+                background-color: darken($color-primary, 4%);
+            }
+            &:nth-child(2) {
+                background-color: lighten($color-primary, 2%);
+                &:hover {
+                    background-color: darken($color-primary, 6%);
+                }
+            }
+        }
+        .fa {
+            color: $white;
+            line-height: 45px;
+            &.fa-phone{
+                font-size: 2.5rem;
+            }
+        }
+        
+    }
+    .owl-theme .owl-controls .owl-page span {
+        background: rgba($white, 1);
+    }
+    .owl-carousel .owl-wrapper-outer {
+        padding-top: 50px;
+    }
+}
+
+

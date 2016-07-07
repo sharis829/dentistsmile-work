@@ -1,0 +1,25 @@
+<section id='info-3columns' class='section-info-3columns'>
+	<div class='col col-sm-4 col-contact'>
+		<i class='fa fa-envelope-o fa-2x'></i>
+		<h3>{{ site.data.layout.contact.title }}</h3>
+		<p><strong>Phone:</strong> {{ site.data.layout.contact.phone }}</p>
+		<p><strong>Emergency:</strong> {{ site.data.layout.contact.em_phone }}</p>
+		<p><strong>Email:</strong> {{ site.data.layout.contact.email }}</p>
+	</div>
+	<div class='col col-sm-4 col-openhours'>
+		<i class='fa fa-clock-o fa-2x'></i>
+		<h3>{{ site.data.layout.openHours.title }}</h3>
+		
+		<table>
+		{% for item in site.data.layout.openHours.items %}
+			<tr><td>{{ item.week_period }}</td><td>{{ item.time_period }}</td></tr>
+		{% endfor %}
+		</table>
+		
+	</div>
+	<div class='col col-sm-4 col-location'>
+		<i class='fa fa-map-marker fa-2x'></i>
+		<h3>{{ site.data.layout.location.title }}</h3>
+		<p>{{ site.data.layout.location.address }}</p>
+	</div>
+</section>

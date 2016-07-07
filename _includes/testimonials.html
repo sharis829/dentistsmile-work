@@ -1,0 +1,20 @@
+<section id='testimonials' class='section-testimonials'>
+	<div class='overlay'>
+		<div class='container-fluid'>
+			<div class="testimonials-slide">
+				{% for item in site.data.layout.testimonials %}
+					<div class="item">
+						<blockquote>
+							<span class='fa fa-{{site.data.layout.icon-quote}}'></span>
+							<p>{{ item.quotes }}</p>
+						</blockquote>
+						<footer>
+							<strong>{{ item.name }}</strong><br>
+							<small>{{ item.title }}</small>
+						</footer>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>

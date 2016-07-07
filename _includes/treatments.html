@@ -1,0 +1,16 @@
+<section id='treatments' class='section-treatments'>
+	<h2>Treatments</h2>
+	<div class='container-fluid'>
+		<div class='row'>
+			{% for item in site.data.layout.treatments %}
+			<div class='item col-sm-6 col-md-4 '>
+				<div class='wrapper'>
+					<span class='fa fa-{{item.icon}} fa-lg'></span>
+					<h4>{{ item.title }}</h4>
+					<p>{{ item.detail }}</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

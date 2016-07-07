@@ -1,0 +1,25 @@
+<section id='team' class='section-team'>
+	<h2>Our Team</h2>
+	<div class="teams-slideshow">
+
+		{% for team-member in site.data.layout.team %}
+		<div class="item expandable-box">
+			<div class='expandable-box-top'>
+				<img class='img-responsive' src="{{team-member.avatar}}" alt="{{team-member.name}}">
+				<h4>{{team-member.name}}</h4>
+			</div>
+			<div class='expandable-box-bottom'>
+					<a class='col' href='mailto:{{team-member.email}}' data-toggle="tooltip" data-placement="top" data-original-title="{{team-member.email}}">
+						<span class='fa fa-{{site.data.layout.icon-envelope}} fa-lg'></span>
+					</a>
+					
+					<a class='col' href='mailto:{{team-member.phone}}' data-toggle="tooltip" data-placement="top" data-original-title="{{team-member.phone}}">
+						<span class='fa fa-{{ site.data.layout.icon-phone }} fa-lg'></span>
+					</a>
+					
+			</div>
+		</div>
+		{% endfor %}
+
+	</div>
+</section>
