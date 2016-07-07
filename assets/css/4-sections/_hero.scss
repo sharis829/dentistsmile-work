@@ -11,7 +11,7 @@
     .hero-content{
         position: static;
         background: rgba(255, 255, 255, 0.6); 
-        padding: 25px 0 25px;
+        padding: $space 0; 
         
         p{
             font:{
@@ -23,32 +23,23 @@
             margin: 0;
         }
         
-        @include breakpoint('sm'){
+        @include breakpoint(sm){
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
+            
+            .hero-content-inner{
+                width: 50%;
+            }
         }
-    }
-    
-    .icon{
-        display: inline-block;
-        width: 20px;
-        
-        path{
-           fill: $color-primary;
-        }
-        
     }
     
     h3{
-        padding: 0 0 0.8rem;
-        text-align: left;
+        padding: 0 0 $space/2;
+        span{
+           vertical-align: middle; 
+        }
     }
-    
-    h3 span{
-       vertical-align: middle; 
-    }
-    
 }
 

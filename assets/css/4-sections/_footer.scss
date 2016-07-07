@@ -1,5 +1,6 @@
 .section-footer{
-    padding: $spaceDouble;
+    @extend %space;
+    
     text-align: center;
     background-color: $color-primary;
     

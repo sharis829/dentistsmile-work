@@ -1,9 +1,9 @@
 <section id='treatments' class='section-treatments'>
-	<h2>Treatments</h2>
 	<div class='container-fluid'>
+		<h2>{{ site.data.layout.treatments.title }}</h2>
 		<div class='row'>
-			{% for item in site.data.layout.treatments %}
-			<div class='item col-sm-6 col-md-4 '>
+			{% for item in site.data.layout.treatments.items %}
+			<div class='item col-sm-6 col-md-4'>
 				<div class='wrapper'>
 					<span class='fa fa-{{item.icon}} fa-lg'></span>
 					<h4>{{ item.title }}</h4>

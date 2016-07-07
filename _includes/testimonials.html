@@ -4,14 +4,14 @@
 			<div class="testimonials-slide">
 				{% for item in site.data.layout.testimonials %}
 					<div class="item">
+						<span class='fa fa-{{site.data.layout.icon-quote}}'></span>
 						<blockquote>
-							<span class='fa fa-{{site.data.layout.icon-quote}}'></span>
 							<p>{{ item.quotes }}</p>
-						</blockquote>
-						<footer>
-							<strong>{{ item.name }}</strong><br>
-							<small>{{ item.title }}</small>
+							<footer>
+								<strong>{{ item.name }}</strong><br>
+								<small>{{ item.title }}</small>
 						</footer>
+						</blockquote>
 					</div>
 				{% endfor %}
 			</div>

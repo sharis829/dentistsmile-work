@@ -1,14 +1,14 @@
 <section class='section-gallery' id='gallery'>
-	<h2>Gallery</h2>
+	<h2>{{ site.data.layout.gallery.title }}</h2>
 	<div class='row'>
-		{% for gallery-item in site.data.layout.gallery %}
-		<a href='assets/img/{{gallery-item.thumb}}' class="gallery-item expandable-box col-xs-6 col-sm-3">
+		{% for gallery-item in site.data.layout.gallery.items %}
+		<a href='assets/img/{{gallery-item.thumb}}' class="gallery-item expandable-box">
 			<div class='expandable-box-top'>
 				<img class='img-responsive' src="assets/img/{{gallery-item.thumb}}" alt="{{gallery-item.alt}}">
 			</div>
 			<div class='expandable-box-bottom'>
 				<div class='link-bar' href='#'>
-					<span class='fa fa-{{site.data.layout.icon-chain}} fa-lg'></span>
+					<span class='fa fa-{{site.data.layout.icon-chain}} fa-2x'></span>
 				</div>
 			</div>
 		</a>

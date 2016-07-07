@@ -48,74 +48,72 @@ hero:
 
 # Contact
 contact:
-    icon:       'svg/envelope-o.html'
+    icon:       'envelope-o'
     title:      'Contact Us'
-    phone:      '932 50 540'
-    em_phone:   '931 53 234'
-    email:      'contact@yoursite.com'
+    items: 
+      - {name: 'Phone', value: 932 50 540}
+      - {name: 'Emergency', value: 931 53 234}
+      - {name: 'Email', value: ontact@yoursite.com}
     
 # Opening Hours
 openHours:
-    icon:               'svg/clock-o.html'
+    icon:               'clock-o'
     title:              'Opening Hours'
     items:
-        - week_period:      Monday - Friday
-          time_period:      9:00 – 18:00
-          
-        - week_period:      Saturday
-          time_period:      10:00 – 17:00 
-          
-        - week_period:      Sunday
-          time_period:      10:00 – 15:00
+        - {name: 'Monday - Friday', value: '9:00 – 18:00'}    
+        - {name: 'Saturday', value: '10:00 – 17:00'}
+        - {name: 'Sunday', value: '10:00 – 15:00'}
 
 # Location
 location:
-    icon:               'svg/map-marker.html'
+    icon:               'map-marker'
     title:              'Location'
     address:           'Von schroeders 273,<br> Viña del mar - Chile'
     
 
 ###### Team
 team:
-   - name: 'Britta Perry'
-     avatar: 'assets/img/team/team1.jpg'
-     phone: '932 50 540'
-     email: 'email@gmail.com'
-     
-   - name: 'Troy Barnes'
-     avatar: 'assets/img/team/team2.jpg'
-     phone: '932 50 540'
-     email: 'email@gmail.com'
-     
-   - name: 'Annie'
-     avatar: 'assets/img/team/team3.jpg'
-     phone: '932 50 540'
-     email: 'email@gmail.com'
-     
-   - name: 'Jeff Winger'
-     avatar: 'assets/img/team/team4.jpg'
-     phone: '932 50 540'
-     email: 'email@gmail.com'
-     
-   - name: 'Britta Perry'
-     avatar: 'assets/img/team/team1.jpg'
-     phone: '932 50 540'
-     email: 'email@gmail.com'
-     
-   - name: 'Troy Barnes'
-     avatar: 'assets/img/team/team2.jpg'
-     phone: '932 50 540'
-     email: 'email@gmail.com'
-     
-   - name: 'Annie'
-     avatar: 'assets/img/team/team3.jpg'
-     phone: '932 50 540'
-     email: 'email@gmail.com'
-     
-   - name: 'Jeff Winger'
-     avatar: 'assets/img/team/team4.jpg'
-     phone: '932 50 540'
-     email: 'email@gmail.com'
+    title: 'Our Team'
+    items:
+       - name: 'Britta Perry'
+         avatar: 'assets/img/team/team1.jpg'
+         phone: '932 50 540'
+         email: 'email@gmail.com'
+         
+       - name: 'Troy Barnes'
+         avatar: 'assets/img/team/team2.jpg'
+         phone: '932 50 540'
+         email: 'email@gmail.com'
+         
+       - name: 'Annie'
+         avatar: 'assets/img/team/team3.jpg'
+         phone: '932 50 540'
+         email: 'email@gmail.com'
+         
+       - name: 'Jeff Winger'
+         avatar: 'assets/img/team/team4.jpg'
+         phone: '932 50 540'
+         email: 'email@gmail.com'
+         
+       - name: 'Britta Perry'
+         avatar: 'assets/img/team/team1.jpg'
+         phone: '932 50 540'
+         email: 'email@gmail.com'
+         
+       - name: 'Troy Barnes'
+         avatar: 'assets/img/team/team2.jpg'
+         phone: '932 50 540'
+         email: 'email@gmail.com'
+         
+       - name: 'Annie'
+         avatar: 'assets/img/team/team3.jpg'
+         phone: '932 50 540'
+         email: 'email@gmail.com'
+         
+       - name: 'Jeff Winger'
+         avatar: 'assets/img/team/team4.jpg'
+         phone: '932 50 540'
+         email: 'email@gmail.com'
 
 ###### Testimonials
 testimonials-hero-image: 'parallax.jpg' 
@@ -136,43 +134,46 @@ testimonials:
 
 ###### Gallery
 gallery:
-    - thumb: gallery/thumb/gl2.jpg
-      large: gallery/large/gl2.jpg
-      alt: 'gl2.jpg'
-    
-    - thumb: gallery/thumb/gl3.jpg
-      large: gallery/large/gl3.jpg
-      alt: 'gl3.jpg'
-            
-    - thumb: gallery/thumb/gl4.jpg
-      large: gallery/large/gl4.jpg
-      alt: 'gl4.jpg'     
-      
-    - thumb: gallery/thumb/gl5.jpg
-      large: gallery/large/gl5.jpg
-      alt: 'gl5.jpg'
- 
-    - thumb: gallery/thumb/gl4.jpg
-      large: gallery/large/gl4.jpg
-      alt: 'gl4.jpg'
-    
-    - thumb: gallery/thumb/gl2.jpg
-      large: gallery/large/gl2.jpg
-      alt: 'gl2.jpg'
-            
-    - thumb: gallery/thumb/gl5.jpg
-      large: gallery/large/gl5.jpg
-      alt: 'gl5.jpg'     
-      
-    - thumb: gallery/thumb/gl3.jpg
-      large: gallery/large/gl3.jpg
-      alt: 'gl3.jpg'
+    title: Gallery
+    items: 
+        - thumb: gallery/thumb/gl2.jpg
+          large: gallery/large/gl2.jpg
+          alt: 'gl2.jpg'
+        
+        - thumb: gallery/thumb/gl3.jpg
+          large: gallery/large/gl3.jpg
+          alt: 'gl3.jpg'
+                
+        - thumb: gallery/thumb/gl4.jpg
+          large: gallery/large/gl4.jpg
+          alt: 'gl4.jpg'     
+          
+        - thumb: gallery/thumb/gl5.jpg
+          large: gallery/large/gl5.jpg
+          alt: 'gl5.jpg'
+     
+        - thumb: gallery/thumb/gl4.jpg
+          large: gallery/large/gl4.jpg
+          alt: 'gl4.jpg'
+        
+        - thumb: gallery/thumb/gl2.jpg
+          large: gallery/large/gl2.jpg
+          alt: 'gl2.jpg'
+                
+        - thumb: gallery/thumb/gl5.jpg
+          large: gallery/large/gl5.jpg
+          alt: 'gl5.jpg'     
+          
+        - thumb: gallery/thumb/gl3.jpg
+          large: gallery/large/gl3.jpg
+          alt: 'gl3.jpg'
 
 
 ###### About 
 about: 
+    title: 'About Us'
     hero-image: 'about.jpg'
-    title: 'Welcome to DentistSmile'
+    subtitle: 'Welcome to DentistSmile'
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!'
     features:
       - icon-name:  'heart'
@@ -185,30 +186,32 @@ about:
 
 ###### Treatments
 treatments:
-    - icon:     'user-md'
-      title:    'Invisible braces'
-      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'
-
-    - icon:     'diamond'
-      title:    'Cosmetic Dentistry'
-      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
+    title: Treatments
+    items:
+        - icon:     'user-md'
+          title:    'Invisible braces'
+          detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'
     
-    - icon:     'flask'
-      title:    'Stain removal'
-      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
-    
-    - icon:     'globe'
-      title:    'Dentures'
-      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'    
-    
-    - icon:     'ambulance'
-      title:    'Emergency Calls'
-      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
-    
-    - icon:     'bed'
-      title:    'Sedation'
-      detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
-    
+        - icon:     'diamond'
+          title:    'Cosmetic Dentistry'
+          detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
+        
+        - icon:     'flask'
+          title:    'Stain removal'
+          detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
+        
+        - icon:     'globe'
+          title:    'Dentures'
+          detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'    
+        
+        - icon:     'ambulance'
+          title:    'Emergency Calls'
+          detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
+        
+        - icon:     'bed'
+          title:    'Sedation'
+          detail:   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?'    
+        
 ##### Footer
 footer:
     nav-links: 

@@ -5,13 +5,13 @@ body {
     color: $color-base;
 }
 
-img{
+img{ /* img 都为自适应 */
     max-width: 100%;
     height: auto;
     vertical-align: middle;    
 }
 
-/*  Typography presets
+/*  Typography presets - sharis: h1~h3 font size and family using bootstrap's presets'
   ------------------------------------  */
 h1, h2, h3, h4{
     margin: 0;
@@ -19,7 +19,7 @@ h1, h2, h3, h4{
 
 h1{
     color: $color-primary-light;
-    padding: 0 0 $space/2;
+    padding: 0 0 $space/2; /* padding is better than margin */
 }
 
 h2{
@@ -28,7 +28,7 @@ h2{
 }
 
 h3 {
-    padding: $space 0;
+    padding: $space 0; /* most h3's styles */
 }
 
 p {

@@ -1,6 +1,6 @@
 .section-treatments {
     background-color: $alabaster;
-    padding: $spaceDouble 0;
+    @extend %space;
     
     .row {
         display: block;

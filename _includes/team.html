@@ -1,8 +1,8 @@
 <section id='team' class='section-team'>
-	<h2>Our Team</h2>
+	<h2>{{ site.data.layout.team.title }}</h2>
 	<div class="teams-slideshow">
 
-		{% for team-member in site.data.layout.team %}
+		{% for team-member in site.data.layout.team.items %}
 		<div class="item expandable-box">
 			<div class='expandable-box-top'>
 				<img class='img-responsive' src="{{team-member.avatar}}" alt="{{team-member.name}}">

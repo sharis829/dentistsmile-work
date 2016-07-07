@@ -1,69 +1,51 @@
-.section-info-3columns{
+.section-info-3columns {
     display: block;
-    
-    @include breakpoint('sm'){
+    @include breakpoint('sm') {
         display: flex;
     }
-    
-    .fa{
+    .fa {
         margin-bottom: $space;
         color: $white;
     }
-    
-    .col{
+    .col {
+        /* 比[class^='col-']*/
         background-color: $color-primary;
-        text-align: center;
         color: $white;
-        padding: $space * 3;
+        padding: $space * 3 $space;
+        @extend %align-center;
         
-        
-        @media (min-width: $screen-sm) and (max-width: $screen-md) {
-           padding: $space * 3  $space;
+        &:nth-child(1) {
+            background-color: $color-primary;
         }
-        
-        h3{
-            color: $white;
-        }
-        
-        p{
-            margin: 0;
-            font-size: 0.9rem;
-            line-height: 1.8;
-        }
-        
-        strong{
-            font-weight: 600;
-        }
-        
-        &.col-openhours{
+        &:nth-child(2) {
             background-color: lighten($color-primary, 2%);
-            
-            .icon{
-                 width: 25px;
-            }
-           
-           table{
-               width: 100%;
-               max-width: 260px;
-               margin: 0 auto;
-           }
-           td:nth-child(1){
-               text-align: left;
-           }
-           
-           td:nth-child(2){
-               text-align: right;
-           }
-           
         }
-        
-        &.col-location{
+        &:nth-child(3) {
             background-color: lighten($color-primary, 4%);
-           
-            .icon{
-                 width: 20px;
-            }
         }
     }
-    
+    h3 {
+        color: $white;
+    }
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    strong {
+        font-weight: 600;
+    }
+    table {
+        width: 100%;
+        max-width: 260px;
+        @include center-block;
+        display: table;
+        
+        td:nth-child(1) {
+            text-align: left;
+        }
+        td:nth-child(2) {
+            text-align: right;
+        }
+    }
 }
